@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ServerService } from './services/server.service';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,6 +8,16 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent /*implements OnInit*/{
+  
+  /*private server = inject(ServerService);
   title = 'proyectoFinal--FRONT';
+
+  ngOnInit(): void {
+    this.server.postRegistro().subscribe(respuesta => {
+      console.log("respuesta", respuesta)
+    })
+    
+  }*/
+  
 }
