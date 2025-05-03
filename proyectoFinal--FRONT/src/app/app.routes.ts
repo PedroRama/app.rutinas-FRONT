@@ -10,9 +10,9 @@ import { CrearrutinaComponent } from './components/crearRutina/crearrutina/crear
 
 export const routes: Routes = [
     
-    {path: "logearse", component: InicioSesionComponent},
+    {path: "", component: InicioSesionComponent},
     {path: "registrarse", component: PantallaRegistrarseComponent},
-    {path: "", component: InicioComponent},
+    {path: "inicio", component: InicioComponent},
     {path: "misrutinas", component: MisRutinasComponent},
     {path: "rutinasfavoritas", component: RutinasFavComponent},
     {path: "usuario", component: UsuarioComponent},
