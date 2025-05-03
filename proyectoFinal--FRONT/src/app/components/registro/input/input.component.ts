@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ServerService } from '../../../services/server.service';
+import { userDataService } from '../../../services/userdata/user-data.service';
 
 @Component({
   selector: 'app-input',
@@ -9,28 +10,25 @@ import { ServerService } from '../../../services/server.service';
 })
 export class InputComponent {
 
-  private server = inject(ServerService)
+  private serviceUserData = inject(userDataService);
 
   nameP: string = "";
   emailP: string = "";
   passwordP: string = "";
 
-  private userData = {
-    name: this.nameP,
-    email: this.emailP,
-    password: this.passwordP
-  };
-
-  ngOnInit(): void {
+  onChangeName($event: Event): void {
+    const value = ($event.target as HTMLInputElement).value;
+    this.serviceUserData.setUserData({ ...this.serviceUserData.getUserData(), name: value });
+  }
   
-    this.server.postRegistro(this.userData).subscribe({
-      next: (respuesta) => {
-        console.log("respuesta", respuesta);
-      },
-      error: (err) => {
-        console.error("Error en postRegistro:", err);
-      }
-    });
+  onChangeEmail($event: Event): void {
+    const value = ($event.target as HTMLInputElement).value;
+    this.serviceUserData.setUserData({ ...this.serviceUserData.getUserData(), email: value });
+  }
+  
+  onChangePassword($event: Event): void {
+    const value = ($event.target as HTMLInputElement).value;
+    this.serviceUserData.setUserData({ ...this.serviceUserData.getUserData(), password: value });
   }
 
 }
