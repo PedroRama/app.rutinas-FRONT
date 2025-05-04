@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Crear Rutina</h2>
+    <div class="container">
+        <p>Nombre de la Actividad</p>
+        <input type="text" (change)="onChangeActivity($event)">
+      </div>
+    <div class="container">
+      <p>Día</p>
+      <input type="text" (change)="onChangeDay($event)">
+    </div>
+    <div class="container">
+      <p>Hora de inicio</p>
+      <input type="time" (change)="onChangeStartTime($event)">
+    </div>
+    <div class="container">
+      <p>Hora de fin</p>
+      <input type="time" (change)="onChangeEndTime($event)">
+    </div>
+    <div class="container">
+      <p>Categoría</p>
+      <input type="text" (change)="onChangeCategory($event)">
+    </div>
+    <div class="container">
+      <button (click)="onCreateRoutine()">CREAR RUTINA</button>
+    </div>
+  </div>
