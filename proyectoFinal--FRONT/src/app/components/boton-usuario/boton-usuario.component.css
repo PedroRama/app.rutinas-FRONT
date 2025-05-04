@@ -1,0 +1,25 @@
+@media (max-width: 400px) {
+  :host {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+      background-color: #ccc;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      width: 100%;
+    }
+    
+    button:hover {
+      background-color: #bbb;
+    }
+
+}
+  

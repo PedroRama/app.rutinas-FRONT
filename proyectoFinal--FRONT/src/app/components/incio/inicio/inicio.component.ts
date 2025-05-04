@@ -6,6 +6,7 @@ import { BotonRutinasFavoritasComponent } from "../boton-rutinas-favoritas/boton
 import { BotonProximaRutinaComponent } from "../boton-proxima-rutina/boton-proxima-rutina.component";
 import { CrearrutinaComponent } from "../../crearRutina/crearrutina/crearrutina.component";
 import { BotonCrearRutinaComponent } from "../boton-crear-rutina/boton-crear-rutina.component";
+import { ServerService } from '../../../services/server.service';
 
 @Component({
   selector: 'app-inicio',
@@ -14,5 +15,5 @@ import { BotonCrearRutinaComponent } from "../boton-crear-rutina/boton-crear-rut
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
-
+  
 }

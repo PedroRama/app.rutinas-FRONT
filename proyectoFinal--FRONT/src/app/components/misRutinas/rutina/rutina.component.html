@@ -1,33 +1,38 @@
-<div>
-    <div>
-        <div>Rutina1</div>
-        <button>FAVORITO</button>
-    </div>
-
-    <div class="container">
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-    </div>
-
-</div>
-
-<p></p>
-
-<div>
-    <div>
-        <div>Rutina2</div>
-        <button>FAVORITO</button>
-    </div>
-
-    <div class="container">
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-        <div>FDJSFHKS</div>
-    </div>
-
+<h2>Mis Rutinas</h2>
+<div class="container">
+    <ul>
+        @for (routine of routines; track $index) {
+            <li>
+                <p><strong>Día:</strong> {{ routine.day }}</p>
+                <p><strong>Nombre RUTINA:</strong> {{ routine.activity }}</p>
+                <p><strong>Hora de inicio:</strong> {{ routine.startTime }}</p>
+                <p><strong>Hora de fin:</strong> {{ routine.endTime }}</p>
+                <p><strong>Categoría:</strong> {{ routine.category }}</p>
+                <button (click)="onEditRoutine(routine)" class="botonModificar">Modificar Rutina</button>
+                <button (click)="onDeleteRoutine(routine._id)" class="botonEliminar">Borrar</button>
+                @if (editingRoutine && editingRoutine._id === routine._id) {
+                    <div class="edit-form">
+                        <h3>Editar Rutina</h3>
+                        <p>Día</p>
+                        <input type="text" [value]="editingRoutine.day" (change)="onChangeDay($event)">
+                        <p>Nombre RUTINA</p>
+                        <input type="text" [value]="editingRoutine.activity" (change)="onChangeActivity($event)">
+                        <p>Hora de inicio</p>
+                        <input type="time" [value]="editingRoutine.startTime" (change)="onChangeStartTime($event)">
+                        <p>Hora de fin</p>
+                        <input type="time" [value]="editingRoutine.endTime" (change)="onChangeEndTime($event)">
+                        <p>Categoría</p>
+                        <input type="text" [value]="editingRoutine.category" (change)="onChangeCategory($event)">
+                        <button (click)="onSaveRoutine()">Guardar</button>
+                        <button (click)="cancelEdit()">Cancelar</button>
+                    </div>
+                }
+            </li>
+        }
+        @if (routines.length === 0) {
+            <li>
+                <p>No tienes rutinas registradas.</p>
+            </li>
+        }
+    </ul>
 </div>
