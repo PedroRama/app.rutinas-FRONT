@@ -1,0 +1,17 @@
+<p>
+    <input type="text" placeholder="DATOS DE INTERES" (change)="onChangeDatosInteres($event)" />
+</p>
+
+<p>
+    <input type="text" placeholder="OBJETIVOS" (change)="onChangeObjetivos($event)" />
+</p>
+
+<p>
+    <input type="number" placeholder="EDAD" (change)="onChangeEdad($event)" />
+</p>
+
+<p>
+    <input type="text" placeholder="FRASE MOTIVADORA" (change)="onChangeFraseMotivadora($event)" />
+</p>
+
+<app-boton-guardar (click)="onGuardar()"></app-boton-guardar>

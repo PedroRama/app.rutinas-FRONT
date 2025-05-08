@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  width: 100%;
+  position: relative; /* Cambia a relative para que el botón esté en el flujo del documento */
+  margin-top: 1rem; /* Espacio entre el botón y el contenido anterior */
+  margin-bottom: 1rem; /* Espacio entre el botón y el footer */
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Asegura que el botón esté visible */
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 95%;
+  max-width: 500px;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  :host {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 95%;
+    max-width: 500px;
+  }
+}

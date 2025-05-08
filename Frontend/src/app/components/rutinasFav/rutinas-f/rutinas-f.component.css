@@ -1,0 +1,127 @@
+.container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+li p strong {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.botonEliminar {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.botonEliminar:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        margin: 2rem auto;
+        padding: 1rem;
+        max-width: 800px;
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1.5rem;
+      }
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      li {
+        padding: 1rem;
+        margin: 1rem 0;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      li p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+      }
+      
+      li p strong {
+        color: #4a90e2;
+        font-weight: bold;
+      }
+      
+      .botonEliminar {
+        background-color: #e74c3c;
+        color: white;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        margin-top: 0.5rem;
+      }
+      
+      .botonEliminar:hover {
+        background-color: #c0392b;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      
+}

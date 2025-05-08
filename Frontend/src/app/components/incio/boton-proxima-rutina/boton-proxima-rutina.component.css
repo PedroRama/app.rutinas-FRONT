@@ -1,0 +1,125 @@
+.container {
+  position: relative; /* Necesario para posicionar el desplegable relativo al contenedor */
+}
+
+.proxima-rutina {
+  position: absolute;
+  bottom: 100%; /* Posiciona el desplegable encima del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1000;
+  width: 300px; /* Ancho fijo opcional */
+}
+
+.proxima-rutina p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.boton-cerrar {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.boton-cerrar:hover {
+  background-color: #c0392b;
+}
+
+.boton-proxima-rutina {
+  background-color: #60964f;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  width: 40vh;
+  text-align: center;
+}
+
+.boton-proxima-rutina:hover {
+  background-color: #8b8907;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    position: relative; /* Necesario para posicionar el desplegable relativo al contenedor */
+  }
+  
+  .proxima-rutina {
+    position: absolute;
+    bottom: 100%; /* Posiciona el desplegable encima del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 1000;
+    width: 300px; /* Ancho fijo opcional */
+  }
+  
+  .proxima-rutina p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .boton-cerrar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .boton-cerrar:hover {
+    background-color: #c0392b;
+  }
+
+  .boton-proxima-rutina {
+    background-color: #60964f;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 40vh;
+    text-align: center;
+  }
+
+  .boton-proxima-rutina:hover {
+    background-color: #c5ab18;
+    transform: translateY(-2px);
+  }
+
+}

@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding-bottom: 6rem; /* Deja espacio si el botón de inicio está fijo abajo */
+}
+
+@media (max-width: 768px) {
+
+  :host {
+      display: block;
+      padding-bottom: 6rem; /* Deja espacio si el botón de inicio está fijo abajo */
+    }
+
+}

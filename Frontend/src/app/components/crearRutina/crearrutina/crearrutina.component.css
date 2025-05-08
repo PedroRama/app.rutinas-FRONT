@@ -1,0 +1,43 @@
+app-boton-inicio {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+app-boton-inicio button {
+  border-radius: 16px 16px 0 0;
+  background-color: #c24de6;
+  font-size: 1.2rem;
+}
+
+p:has(app-boton-inicio) {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  app-boton-inicio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+  }
+  
+  app-boton-inicio button {
+    border-radius: 16px 16px 0 0;
+    background-color: #c24de6;
+    font-size: 1.2rem;
+  }
+  
+  p:has(app-boton-inicio) {
+    margin: 0;
+  }
+  
+}

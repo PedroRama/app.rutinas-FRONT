@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-boton-usuario, app-boton-inicio {
+  margin: 1rem auto;
+}
+
+app-rutinas-f {
+  flex: 1;
+  padding-bottom: 4rem; /* por si hay botón fijo al fondo */
+}
+
+@media (max-width: 768px) {
+
+    :host {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      app-boton-usuario, app-boton-inicio {
+        margin: 1rem auto;
+      }
+      
+      app-rutinas-f {
+        flex: 1;
+        padding-bottom: 4rem; /* por si hay botón fijo al fondo */
+      }
+
+}
