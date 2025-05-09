@@ -79,4 +79,17 @@ export class ServerService {
     const url = `http://localhost:4500/api/routine/${data._id}`; // Usa _id para construir la URL
     return this.http.put(url, data, { headers });
   }
+
+  // Poner Rutina Favorita
+  updateFavoriteRutine(routineId: string, isFavorite: boolean): Observable<any> {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+      console.error('No se encontró el token de autenticación');
+      return throwError(() => new Error('No se encontró el token de autenticación'));
+    }
+  
+    const headers = { Authorization: `Bearer ${token}` };
+    const url = `http://localhost:4500/api/routine/${routineId}/favorite`; // Usa routineId para construir la URL
+    return this.http.patch(url, { isFavorite }, { headers });
+  }
 }

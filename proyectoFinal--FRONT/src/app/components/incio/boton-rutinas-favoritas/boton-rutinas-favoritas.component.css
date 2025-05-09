@@ -1,4 +1,24 @@
-@media (max-width: 400px) {
+button {
+  background-color: #ff8c42; /* Color distintivo: naranja suave */
+  color: white;
+  height: 70vh; /* 70% de la altura de la pantalla */
+  width: 25vh;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #e67830; /* Color más oscuro para hover */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
 
   button {
     background-color: #ff8c42; /* Color distintivo: naranja suave */

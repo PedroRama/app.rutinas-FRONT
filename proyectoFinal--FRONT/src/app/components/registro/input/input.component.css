@@ -1,36 +1,64 @@
-@media (max-width: 400px) {
+.container {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+p.nombre,
+p.contraseña {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  font-family: 'Arial', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7b4fe4;
+  box-shadow: 0 0 5px rgba(123, 79, 228, 0.3);
+}
+
+@media (max-width: 768px) {
   
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; 
-      justify-content: center; 
-      padding: 10px 20px;
-      border: 3px solid #000;
-      border-radius: 10px;
-      font-weight: bold;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      text-decoration: none;
-      color: #000;
-      background-color: white;
-      width: 90%;
-      max-width: 350px; 
-      margin-bottom: 20px; 
-    }
-  
-    .nombre, .contraseña {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  
-    .container input {
-      padding: 8px;
-      border-radius: 5px;
-      border: 2px solid #ccc;
-      width: 80%;
-      text-align: center;
-    }
+  .container {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
   }
+  
+  p.nombre,
+  p.contraseña {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #7b4fe4;
+    box-shadow: 0 0 5px rgba(123, 79, 228, 0.3);
+  }
+  
+}
   

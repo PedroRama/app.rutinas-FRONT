@@ -1,0 +1,217 @@
+/* General */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de rutinas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Elementos de la lista */
+li {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+li p strong {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Botones */
+.botonModificar,
+.botonEliminar {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0.25rem;
+}
+
+.botonModificar {
+  background-color: #e4b54f;
+}
+
+.botonModificar:hover {
+  background-color: #d3a940;
+}
+
+.botonEliminar {
+  background-color: #e74c3c;
+}
+
+.botonEliminar:hover {
+  background-color: #c0392b;
+}
+
+/* Editar formulario */
+.edit-form {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.edit-form h3 {
+  margin-bottom: 1rem;
+  color: #4a90e2;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.edit-form input:focus {
+  border-color: #4a90
+}
+
+@media (max-width: 768px) {
+
+/* General */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lista de rutinas */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Elementos de la lista */
+  li {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  li p strong {
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .botonModificar,
+  .botonEliminar {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0.25rem;
+  }
+  
+  .botonModificar {
+    background-color: #e4b54f;
+  }
+  
+  .botonModificar:hover {
+    background-color: #d3a940;
+  }
+  
+  .botonEliminar {
+    background-color: #e74c3c;
+  }
+  
+  .botonEliminar:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Editar formulario */
+  .edit-form {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  
+  .edit-form h3 {
+    margin-bottom: 1rem;
+    color: #4a90e2;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .edit-form input:focus {
+    border-color: #4a90
+  }
+
+}

@@ -94,4 +94,20 @@ export class RutinaComponent {
       }
     }
 
+    onAddToFavorites(routineId: string): void {
+      this.server.updateFavoriteRutine(routineId, true).subscribe({
+        next: () => {
+          alert('Rutina añadida a favoritos exitosamente.');
+          const routine = this.routines.find(r => r._id === routineId);
+          if (routine) {
+            routine.isFavorite = true;
+          }
+        },
+        error: (err) => {
+          console.error('Error al añadir a favoritos:', err);
+          alert('Hubo un error al añadir la rutina a favoritos. Inténtalo de nuevo.');
+        }
+      });
+    }
+
 }

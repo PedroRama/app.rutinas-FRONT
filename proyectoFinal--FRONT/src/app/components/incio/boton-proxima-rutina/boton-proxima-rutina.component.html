@@ -1,3 +1,13 @@
 <div class="container">
-    <button>Próxima Rutina</button>
+    <button (click)="findNextRoutine()" class="boton-proxima-rutina">Próxima Rutina</button>
+    @if (nextRoutine) {
+      <div class="proxima-rutina">
+        <p><strong>Actividad:</strong> {{ nextRoutine.activity }}</p>
+        <p><strong>Categoría:</strong> {{ nextRoutine.category }}</p>
+        <p><strong>Día:</strong> {{ nextRoutine.day }}</p>
+        <p><strong>Hora de inicio:</strong> {{ nextRoutine.startTime }}</p>
+        <p><strong>Hora de fin:</strong> {{ nextRoutine.endTime }}</p>
+        <button (click)="closeDropdown()" class="boton-cerrar">Cerrar</button>
+      </div>
+    }
 </div>

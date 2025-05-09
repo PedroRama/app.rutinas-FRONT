@@ -1,4 +1,176 @@
-@media (max-width: 400px) {
+/* Contenedor de rutinas */
+.container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #f4f4f4;  /* Fondo gris claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de lista de rutinas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Cada elemento de la lista */
+li {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: white;  /* Fondo blanco */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los párrafos dentro de la lista */
+li p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #333;  /* Texto gris oscuro */
+  font-family: 'Arial', sans-serif;  /* Fuente básica */
+}
+
+/* Párrafos con negritas */
+li p strong {
+  color: #4a90e2;  /* Azul para las etiquetas */
+  font-weight: bold;
+}
+
+/* Estilo del formulario de edición */
+.edit-form {
+  background-color: #f0f0f0;  /* Fondo gris claro */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+/* Estilo del título en el formulario de edición */
+.edit-form h3 {
+  margin-bottom: 1rem;
+  color: #4a90e2;  /* Azul para el título */
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;  /* Fuente más moderna */
+}
+
+/* Estilo de los campos de entrada en el formulario */
+.edit-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;  /* Fuente básica */
+}
+
+/* Foco en los campos de entrada */
+.edit-form input:focus {
+  border-color: #4a90e2;  /* Azul para cuando se enfoca el campo */
+  outline: none;
+}
+
+/* Botón de "Guardar" */
+.edit-form button.save {
+    background-color: #2ecc71;  /* Verde brillante */
+    color: white;
+    padding: 0.75rem 2rem;  /* Tamaño de los botones */
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;  /* Esto hará que el botón sea redondeado */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+/* Botón de "Cancelar" */
+.edit-form button.cancel {
+  background-color: #95a5a6;  /* Gris */
+  color: white;
+}
+
+/* Efecto hover para "Guardar" */
+.edit-form button.save:hover {
+    background-color: #27ae60;  /* Verde más oscuro al hacer hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto hover para "Cancelar" */
+.edit-form button.cancel:hover {
+  background-color: #7f8c8d;  /* Gris más oscuro */
+}
+
+/* Estilo del encabezado "Mis Rutinas" */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;  /* Gris oscuro */
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;  /* Fuente moderna */
+}
+
+.botonModificar {
+    background-color: #e4b54f;  /* Naranja brillante */
+    color: white;
+    padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+    font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+    border: none;
+    border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+  
+.botonEliminar {
+    background-color: #e74c3c;  /* Rojo brillante */
+    color: white;
+    padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+    font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+    border: none;
+    border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.botonFAVORITA {
+  background-color: #3aa025;  /* Naranja brillante */
+  color: white;
+  padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+  font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+  border: none;
+  border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.botonFAVORITA :hover {
+  background-color: #6bd455;  /* Naranja brillante */
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+  font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+  border: none;
+  border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
   
     /* Contenedor de rutinas */
     .container {
@@ -74,17 +246,6 @@
       outline: none;
     }
   
-    /* Estilo de los botones dentro del formulario de edición */
-    /*.edit-form button {
-      width: auto;
-      margin: 1rem 0.5rem;
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-family: 'Arial', sans-serif;
-      cursor: pointer;
-    }*/
-  
     /* Botón de "Guardar" */
     .edit-form button.save {
         background-color: #2ecc71;  /* Verde brillante */
@@ -139,9 +300,9 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: inline-block;
         margin: 0.5rem 0;
-      }
+    }
       
-      .botonEliminar {
+    .botonEliminar {
         background-color: #e74c3c;  /* Rojo brillante */
         color: white;
         padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
@@ -153,8 +314,35 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: inline-block;
         margin: 0.5rem 0;
-      }
-      
+    }
+    
+    .botonFAVORITA {
+      background-color: #3aa025;  /* Naranja brillante */
+      color: white;
+      padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+      font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+      border: none;
+      border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+
+    .botonFAVORITA :hover {
+      background-color: #6bd455;  /* Naranja brillante */
+      color: rgb(0, 0, 0);
+      padding: 0.5rem 1.5rem;  /* Reducir el padding para hacer el botón más pequeño */
+      font-size: 0.9rem;  /* Reducir el tamaño de la fuente */
+      border: none;
+      border-radius: 30px;  /* Mantener bordes redondeados pero más pequeños */
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
   
   }
   

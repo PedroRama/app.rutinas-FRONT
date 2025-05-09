@@ -1,19 +1,20 @@
-<div>
-
-    <div class="container">RUTINA1</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-
-</div>
-
-<div>
-
-    <div class="container">RUTINA2</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-    <div class="container">SFSFSFSFSFSF</div>
-
+<h2>Mis Rutinas Favoritas</h2>
+<div class="container">
+  <ul>
+    @for (routine of favoriteRoutines; track $index) {
+      <li>
+        <p><strong>Día:</strong> {{ routine.day }}</p>
+        <p><strong>Nombre RUTINA:</strong> {{ routine.activity }}</p>
+        <p><strong>Hora de inicio:</strong> {{ routine.startTime }}</p>
+        <p><strong>Hora de fin:</strong> {{ routine.endTime }}</p>
+        <p><strong>Categoría:</strong> {{ routine.category }}</p>
+        <button (click)="onRemoveFromFavorites(routine._id)" class="botonEliminar">Quitar de Favoritos</button>
+      </li>
+    }
+    @if (favoriteRoutines.length === 0) {
+      <li>
+        <p>No tienes rutinas favoritas registradas.</p>
+      </li>
+    }
+  </ul>
 </div>

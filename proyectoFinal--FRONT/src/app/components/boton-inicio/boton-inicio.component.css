@@ -1,42 +1,43 @@
-@media (max-width: 400px) {
-    /* Aplícalo en tu componente que contiene el botón "Inicio" */
-    :host {
-      position: fixed;
-      bottom: 0;           /* ya no hay espacio extra */
-      left: 0;
-      right: 0;            /* para estirarlo a todo el ancho */
-      margin: 0;           /* elimina márgenes del host */
-      padding: 0;          /* elimina paddings del host */
-      display: flex;
-      justify-content: center;
-      z-index: 1000;
-    }
-  
-    /* Asegúrate también de que body/html no tengan márgenes: */
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-  
-    /* Estilo de tu botón */
-    button {
-      background-color: #c24de6;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 500px;
-      margin: 0;          /* elimina márgenes del botón */
-    }
-  
-    button:hover {
-      background-color: #357abd;
-      transform: translateY(-2px);
-    }
+:host {
+  display: block;
+  width: 100%;
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 50px; /* Ajusta esta distancia para mover el botón más abajo */
+  left: 0; /* Asegura que el botón esté alineado al lado izquierdo */
+  z-index: 1000; /* Asegura que el botón esté visible por encima de otros elementos */
+  display: flex;
+  justify-content: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #c24de6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+/* Opcional: Ajustes visuales específicos solo para pantallas grandes */
+@media (min-width: 769px) {
+  button {
+    max-width: 200px; /* Más pequeño en escritorio si lo prefieres más contenido */
+    font-size: 1.1rem;
   }
-  
+}

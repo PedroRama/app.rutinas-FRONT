@@ -3,6 +3,7 @@
     <ul>
         @for (routine of routines; track $index) {
             <li>
+                <button (click)="onAddToFavorites(routine._id)" class="botonFAVORITA">AÑADIR A FAVORITOS</button>
                 <p><strong>Día:</strong> {{ routine.day }}</p>
                 <p><strong>Nombre RUTINA:</strong> {{ routine.activity }}</p>
                 <p><strong>Hora de inicio:</strong> {{ routine.startTime }}</p>
