@@ -1,6 +1,6 @@
-# 🏋️‍♀️ App Rutinas - Frontend
+# 📅 RUTINATOR - Frontend
 
-Este proyecto representa la interfaz de usuario de la **Aplicación de Rutinas**, una plataforma diseñada para gestionar rutinas de entrenamiento personalizadas, seguimiento de progreso y planificación semanal.
+Este proyecto representa la interfaz de usuario de **RUTINATOR**, una plataforma diseñada para gestionar rutinas personalizadas de cualquier tipo: entrenamiento, estudio, tareas del hogar, hábitos diarios y más. Permite llevar un seguimiento organizado del progreso y planificar actividades de forma flexible y visual.
 
 ## 🚀 Tecnologías Utilizadas
 
