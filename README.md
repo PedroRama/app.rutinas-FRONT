@@ -7,7 +7,7 @@ Este proyecto representa la interfaz de usuario de **RUTINATOR**, una plataforma
 - **HTML**
 - **CSS**
 - **TypeScript / JavaScript**
-- 
+  
 ## 📁 COMPONENTES
 components/
 ├── boton-inicio/ # Boton para volver al inicio desde cualquier pantalla.
